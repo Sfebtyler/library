@@ -1,0 +1,19 @@
+<div class="reviewPage">
+    {{BkCtrl.allowAuthCredentials()}}
+    <div class="reviewPage__currentUser">Current User:
+        <div>{{BkCtrl.varService.current_user.username}}</div>
+        <button ng-click="BkCtrl.logout()">Logout</button>
+    </div>
+    <div>Title:
+        <div class="reviewPage__title">{{BkCtrl.varService.bookdetails.title}}</div>
+    </div>
+    <div>
+        Description:
+        <div class="reviewPage__description">{{BkCtrl.varService.bookdetails.description}}</div>
+    </div>
+    <div class="reviewPage__buttons">
+        <button ng-if="BkCtrl.varService.bookdetails.check_in" ng-click="BkCtrl.checkOut(BkCtrl.varService.bookdetails, BkCtrl.varService.current_user)">Check Out</button>
+        <div class="reviewPage__checkedOutText" ng-hide="BkCtrl.varService.bookdetails.check_in">Checked Out</div>
+        <button ng-click="BkCtrl.rerouteToBookList()">Back</button>
+    </div>
+</div>

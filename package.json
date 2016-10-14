@@ -1,0 +1,32 @@
+{
+  "name": "app_without_server",
+  "version": "1.0.0",
+  "description": "basic blog app with dev server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "tgfbikes"
+  },
+  "author": "Steven Tyler",
+  "license": "ISC",
+  "dependencies": {
+    "babelify": "^7.3.0",
+    "bcryptjs": "^2.3.0",
+    "bootstrap": "^3.3.7",
+    "browserify": "^13.0.1",
+    "colors": "^1.1.2",
+    "express": "^4.14.0",
+    "flux": "^2.1.1",
+    "jquery": "^2.2.4",
+    "lodash": "^4.13.1",
+    "toaster": "^0.1.2",
+    "toastr": "^2.1.2",
+    "vinyl-source-stream": "^1.1.0",
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "http-server": "^0.9.0"
+  }
+}

@@ -1,0 +1,123 @@
+body {
+    background-color: #800000;
+}
+
+
+
+
+.page {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    background-color: white;
+    padding-bottom: 5px;
+
+}
+
+
+
+
+.library {
+    position: relative;
+}
+
+.library__bookColumn {
+    position: relative;
+    width: 60%;
+    left: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.library__book {
+    border: solid white 4px;
+    background-color: #b3ffff;
+    padding-bottom: 10px;
+    padding: 5px;
+    width: 250px;
+
+}
+
+.library__currentUser {
+    position: absolute;
+    top: 0%;
+    left: 90%;
+    z-index: 10;
+}
+
+.library__searchBar {
+    position: relative;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    z-index: 5;
+}
+
+.library__error {
+    padding-top: 50px;
+    padding-left: 40px;
+}
+
+.library__backButton {
+    padding: 5px 0px 10px 5px;
+}
+
+.library__checkedInTrue {
+    color: blue;
+    padding-left: 10px;
+}
+
+.library__checkedInFalse {
+    color: red;
+    padding-left: 10px;
+}
+
+
+
+
+.reviewPage {
+    position: relative;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+.reviewPage__title {
+    padding-left: 15px;
+}
+
+.reviewPage__description {
+    padding-left: 15px;
+}
+
+.reviewPage__buttons {
+    padding-top: 15px;
+}
+
+.reviewPage__currentUser {
+    position: absolute;
+    top: 0%;
+    left: 90%;
+}
+
+.reviewPage__checkedOutText {
+    color: red;
+}
+
+
+
+
+.login {
+    height: 360px;
+}
+
+.login__details {
+    border: solid black 1px;
+    width: 200px;
+    height: relative;
+    margin: auto;
+}
+
+.top_banner {
+    width: 100%;
+    margin: auto;
+}

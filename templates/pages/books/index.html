@@ -1,0 +1,34 @@
+<div class="library">
+    {{BkCtrl.allowAuthCredentials()}}
+    <div class="library__backButton">
+        <button ng-click="BkCtrl.showFullBooksList()">{{BkCtrl.varService.buttontext}}</button>
+    </div>
+    <div class="library__currentUser">Current User:
+        <div>{{BkCtrl.varService.current_user.username}}</div>
+        <button ng-click="BkCtrl.logout()">Logout</button>
+    </div>
+    <div ng-hide="BkCtrl.varService.hide" class="library__searchBar">
+        Search:
+        <input type="text" ng-model="BkCtrl.varService.searchVal" ng-change="BkCtrl.search()">
+        <div class="library__error">{{BkCtrl.varService.error}}</div>
+    </div>
+    <div ng-if="BkCtrl.varService.hide == false" class="library__bookColumn">
+        <div class="library__book" ng-repeat="book in BkCtrl.varService.found" ng-click="BkCtrl.rerouteToBookDetail(book)">
+            <p>{{book.title}}</p>
+            Author:
+            <p>{{BkCtrl.getAuthorName(book)}}</p>
+            <div ng-class="book.check_in ? 'library__checkedInTrue':'library__checkedInFalse'">{{BkCtrl.showIfIn(book)}}</div>
+        </div>
+    </div>
+
+    <div ng-if="BkCtrl.varService.hide" class="library__bookColumn">
+        <div class="library__book" ng-repeat="book in BkCtrl.varService.bookslist" ng-click="BkCtrl.rerouteToBookDetail(book)">
+            <p>{{book.title}}</p>
+            Author:
+            <p>{{BkCtrl.getAuthorName(book)}}</p>
+            <span ng-class="book.check_in ? 'library__checkedInTrue':'library__checkedInFalse'">{{BkCtrl.showIfIn(book)}}</span>
+        </div>
+    </div>
+    </div>
+
+</div>

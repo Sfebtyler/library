@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="library">
+    <head>
+         <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+         <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body ng-controller="BookController as BkCtrl">
+        <div class="page">
+            <img src="top_banner.jpg" class="top_banner" ng-click="BkCtrl.rerouteToLogin()">
+            <div ng-view>
+
+            </div>
+        </div>
+
+         <script type="text/javascript" src="./node_modules/angular/angular.js"></script>
+         <script type="text/javascript" src="./node_modules/angular-file-model-master/angular-file-model.js"></script>
+         <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.js"></script>
+         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+         <script type="text/javascript" src="./javascript/routes.js"></script>
+         <script type="text/javascript" src="./javascript/app.js"></script>
+    </body>
+
+</html>
